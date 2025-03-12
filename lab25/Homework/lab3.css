@@ -1,0 +1,15 @@
+.colorNames {
+    color: red;
+}
+
+.HEX {
+    background-color: #ff5733;
+}
+
+.RGB {
+    color: rgb(0, 0, 255);
+}
+
+.RGBA {
+    background-color: rgba(0, 255, 0, 0.5);
+}

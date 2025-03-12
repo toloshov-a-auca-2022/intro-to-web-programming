@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>No Title</title>
+</head>
+<body>
+  <form action="submit.php" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" min="18" max="60">
+
+    <p>Gender:</p>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+
+    <p>Interests:</p>
+    <input type="checkbox" id="sports" name="interests" value="sport">
+    <label for="sports">Sports</label>
+    <input type="checkbox" id="music" name="interests" value="music">
+    <label for="music">Music</label>
+
+    <label for="resume">Upload Resume:</label>
+    <input type="file" id="resume" name="resume">
+
+    <button type="submit">Sumbit</button>
+  </form>
+</body>
+</html>
+{##}
+{#2. Types of Input Fields#}
+{#Different input types ensure that the data collected is appropriate for the intended use, and they often trigger specific on-screen keyboards or built-in validations on mobile devices and modern browsers.#}
+{#Text Field (type="text"):#}
+{#Used for single-line text input such as names or search queries.#}

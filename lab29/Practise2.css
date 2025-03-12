@@ -1,0 +1,7 @@
+.gradient-box {
+    background: linear-gradient(to bottom, #00c6ff, #0072ff);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}

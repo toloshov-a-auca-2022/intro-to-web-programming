@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: steelblue;
+    margin: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}

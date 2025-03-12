@@ -1,0 +1,32 @@
+.block {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: #FFD700;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 50px;
+    color: #000;
+}
+
+.inline {
+    display: inline;
+    background-color: #FF69B4;
+    padding: 10px;
+    color: #FFF;
+}
+
+.inline-block {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    background-color: #00CED1;
+    margin: 5px;
+    text-align: center;
+    line-height: 50px;
+    color: #FFF;
+}
+
+.none {
+    display: none;
+}

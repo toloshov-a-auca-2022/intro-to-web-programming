@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order</title>
+</head>
+<body>
+  <form action="/order.php" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+
+    <label for="product">Choose a product:</label>
+    <select id="product" name="product">
+      <option value="laptop">Laptop</option>
+      <option value="phone">Phone</option>
+      <option value="tablet">Tablet</option>
+    </select>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="0" required>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+</body>
+</html>

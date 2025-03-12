@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>No Title</title>
+</head>
+<body>
+    <form action="/submit-form" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <form action="submit.php" method="post">
+        <label for="username1">Username:</label>
+        <input type="text" id="username1" name="username1">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+{##}
+{#1. Creating Forms (<form>, <input>, <label>)#}
+{#Why We Need It:#}
+{#Forms create a dedicated area for user interaction and data collection. They act as the gateway between the user and the server, allowing information to be submitted for processing (such as logging in, searching, or completing a survey).#}
+{#Where to Use Them:#}
+{#In contact forms on business websites.#}
+{#On registration or login pages.#}
+{#For search bars and feedback forms.#}
+{#In any scenario where user input is required for further processing.#}
+{#How to Create a Form:#}
+{#The <form> element encloses all the controls and defines attributes such as action (the URL where data is sent) and method (GET or POST).#}
+{#The <input> element is used to create various data fields.#}
+{#The <label> element provides an accessible description for input fields, linking text to a specific form control via the for attribute.#}

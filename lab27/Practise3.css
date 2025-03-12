@@ -1,0 +1,13 @@
+.overflow-box {
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+.scroll-box {
+    width: 200px;
+    height: 100px;
+    overflow: scroll;
+    border: 2px solid black;
+}

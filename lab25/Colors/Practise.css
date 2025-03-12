@@ -1,0 +1,16 @@
+p {
+    color: red;
+    background-color: yellow;
+}
+
+p {
+    color: #ff5733;
+}
+
+p {
+    color: rgb(240, 0, 0);
+}
+
+p {
+    background-color: rgba(255, 0 , 0, 0.5);
+}

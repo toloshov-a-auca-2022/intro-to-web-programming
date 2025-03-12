@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Enhanced HTML Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
+        nav ul { list-style: none; padding: 0; }
+        nav ul li { display: inline; margin-right: 15px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        table, th, td { border: 1px solid black; padding: 10px; text-align: left; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Cooking Web Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>This is an improved version of my first HTML page. It includes more elements and interactivity.</p>
+    </section>
+
+    <section>
+        <h2>Styled Text Example</h2>
+        <p><strong>Bold <em>and italicized</em> text</strong> can be useful for emphasis.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Feel free to reach out via the contact form below.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <img src="../images/example.png" alt="Cute Cat" width="200" height="200">
+    </section>
+
+    <section>
+        <h2>Media</h2>
+        <audio controls>
+            <source src="../audio/example.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <video width="640" height="360" controls>
+            <source src="../video/example.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section>
+        <h2>Recipe Instructions</h2>
+        <ol>
+            <li>Preheat the oven to 350°F.</li>
+            <li>Mix flour, sugar, and eggs.</li>
+            <li>Pour the mixture into a baking dish.</li>
+            <li>Bake for 25 minutes.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Shopping List</h2>
+        <ul>
+            <li>Apples</li>
+            <li>Oranges</li>
+            <li>Pickles</li>
+            <li>Bananas</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Contact Directory</h2>
+        <table>
+            <tr>
+                <th rowspan="2">Name</th>
+                <th colspan="2">Contact Details</th>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+            <tr>
+                <td>Adilet</td>
+                <td>alice@example.com</td>
+                <td>123-456-3450</td>
+            </tr>
+            <tr>
+                <td>Farzon</td>
+                <td>bob@example.com</td>
+                <td>093-314-3320</td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
+

@@ -1,0 +1,13 @@
+p {
+    color: green;
+}
+
+.selector {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+#idSelector {
+    color: blue;
+    text-align: center;
+}

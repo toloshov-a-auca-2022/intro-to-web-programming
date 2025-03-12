@@ -1,0 +1,6 @@
+.container {
+    width: 50%;
+    max-width: 500px;
+    height: 150px;
+    background-color: lightgreen;
+}

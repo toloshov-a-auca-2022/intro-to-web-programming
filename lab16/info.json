@@ -1,0 +1,10 @@
+{
+    "name": "Adilet",
+    "age": 21,
+    "year of study": "Junior",
+    "courses": [
+        "Intro to Web Programming",
+        "German Language",
+        "Algorithms"
+    ]
+}
