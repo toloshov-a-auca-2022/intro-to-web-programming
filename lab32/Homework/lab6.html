@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Button Animation</title>
+    <style>
+      .btn {
+        background-color: blue;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 40%;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        animation: pulse 1.5s infinite alternate;
+      }
+
+      @keyframes pulse {
+        from {
+          box-shadow: 0 0 5px blue;
+        }
+        to {
+          box-shadow: 0 0 35px navy;
+        }
+      }
+    </style>
+</head>
+<body>
+  <button class="btn">Glowing Button</button>
+</body>
+</html>
