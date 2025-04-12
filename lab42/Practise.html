@@ -1,0 +1,131 @@
+{#empty field validation#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="username" placeholder="Enter username">
+    <button onclick="validateForm()">Submit</button>
+    <p id="output"></p>
+
+    <script>
+        function validateForm() {
+            let name = document.getElementById("username").value;
+            if(name.trim() === 0) {
+                alert("Name cannot be empty!");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>
+
+{#Email Validation#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="email" id="email" placeholder="Enter your email">
+    <button onclick="validateEmail()">Submit</button>
+    <p id="output"></p>
+
+    <script>
+        function validateEmail() {
+            let email = document.getElementById("email").value;
+            let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if(!regex.test(email)) {
+                alert("Invalid Email address");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>
+
+
+{#Number Validation#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="number" id="age" placeholder="Enter your age">
+    <button onclick="validateNumber()">Submit</button>
+    <p id="output"></p>
+
+    <script>
+      function validateNumber() {
+          let age = document.getElementById("age").value;
+          if (isNaN(age) || age === "") {
+              alert("Please enter a valid number!");
+              return false;
+          }
+
+          return true;
+      }
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Submission</title>
+</head>
+<body>
+    <form id="userForm">
+        <input type="text" id="name" placeholder="Enter your name">
+        <input type="email" id="email" placeholder="Enter your email">
+        <button type="submit">Submit</button>
+    </form>
+    <p id="result"></p>
+
+    <script>
+        document.getElementById("userForm").addEventListener("submit", function (event) {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+
+            if(name.trim() === "" || email.trim() === "") {
+                alert("All fields are required!");
+                return;
+            }
+
+            document.getElementById("result").innerText = "Form submitted successfully";
+        });
+    </script>
+</body>
+</html>
+
+
+{#get value#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="username" placeholder="Enter your username">
+    <button onclick="getValue()">Submit</button>
+    <p id="output"></p>
+    <script>
+        function getValue() {
+            let input = document.getElementById("username").value;
+            document.getElementById("output").innerText = "You entered " + input;
+        }
+    </script>
+</body>
+</html>

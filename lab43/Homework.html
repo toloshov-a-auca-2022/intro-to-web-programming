@@ -1,0 +1,156 @@
+{#lab 1#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Paragraph Style</title>
+</head>
+<body>
+
+    <p id="text">Sample paragraph.</p>
+    <button onclick="changeStyle()">Click Me</button>
+
+    <script>
+        function changeStyle() {
+            let paragraph = document.getElementById("text");
+            paragraph.style.color = "white";
+            paragraph.style.backgroundColor = "lightgray";
+            paragraph.style.fontSize = "24px";
+        }
+    </script>
+
+</body>
+</html>
+
+{#lab 2 #}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Class</title>
+    <style>
+        .highlight {
+            color: white;
+            background-color: blue;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <p id="text">Click the button to highlight me!</p>
+    <button id="toggleClass">Toggle Highlight</button>
+
+    <script>
+        let button = document.getElementById("toggleClass");
+        let text = document.getElementById("text");
+
+        button.onclick = function() {
+            text.classList.toggle("highlight");
+        };
+    </script>
+
+</body>
+</html>
+
+
+{#lab 3#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade Out Effect</title>
+</head>
+<body>
+
+    <p id="fadeText">This text will fade out.</p>
+    <button id="fadeButton">Fade Out</button>
+
+    <script>
+        let button = document.getElementById("fadeButton");
+        let text = document.getElementById("fadeText");
+
+        button.onclick = function() {
+            let opacity = 1;
+            function fade() {
+                if (opacity > 0) {
+                    opacity -= 0.1;
+                    text.style.opacity = opacity;
+                    setTimeout(fade, 100);
+                }
+            }
+            fade();
+        };
+    </script>
+
+</body>
+</html>
+
+
+{#lab 4#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Box</title>
+    <style>
+        #box {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            top: 100px;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="box"></div>
+    <button id="moveButton">Move Right</button>
+
+    <script>
+        let box = document.getElementById("box");
+        let button = document.getElementById("moveButton");
+        let position = 0;
+        let interval;
+
+        button.onclick = function() {
+            clearInterval(interval);
+            interval = setInterval(function() {
+                position += 5;
+                box.style.left = position + "px";
+                if(position > 300) clearInterval(interval);
+            }, 50);
+        };
+    </script>
+
+</body>
+</html>
+
+
+{#lab 5#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="blinkText">Sample Paragraph</p>
+
+    <script>
+        let text = document.getElementById("blinkText");
+
+        setInterval(() => {
+            text.style.color = text.style.color === "red" ? "blue" : "red"
+        });
+    </script>
+</body>
+</html>

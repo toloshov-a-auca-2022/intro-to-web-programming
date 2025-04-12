@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <a href="{{ url_for('main.add_fabric') }}">Add New Fabric</a>
+  <ul>
+    {% for fabric in fabrics %}
+      <li>{{ fabric.name }} - {{ fabric.color }} - {{ fabric.quantity }}m 
+          <a href="{{ url_for('main.delete_fabric', fabric_id=fabric.id) }}">[Delete]</a>
+      </li>
+    {% else %}
+      <li>No fabrics in storage.</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

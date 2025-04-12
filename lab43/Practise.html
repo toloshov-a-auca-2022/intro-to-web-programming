@@ -1,0 +1,107 @@
+{#1. Changing Styles via style Property#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button id="colorBtn">Click Me</button>
+
+    <script>
+        let button = document.getElementById("colorBtn");
+
+        button.onclick = function() {
+            button.style.backgroundColor = "blue";
+            button.style.color = "white";
+            button.style.fontSize = "50px;"
+        }
+    </script>
+</body>
+</html>
+
+
+{#2. Adding and Removing Classes (classList.add, classList.remove)#}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p id="text">Click the button to highlight this text.</p>
+    <button id="toggleBtn">Toggle Highlight</button>
+
+    <script>
+        let text = document.getElementById("text");
+        let button = document.getElementById("toggleBtn");
+
+        button.onclick = function() {
+            text.classList.toggle("highlight");
+        };
+    </script>
+</body>
+</html>
+
+
+{#3. Animations with setTimeout and setInterval#}
+{#Example 1: Using setTimeout for Delayed Animation#}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="text">This text will change color in 2 seconds</p>
+
+    <script>
+        setTimeout(() => {
+            document.getElementById("text").style.color = "red";
+        }, 2000);
+    </script>
+</body>
+</html>
+
+
+{#Example 2: Using setInterval for Continuous Animation#}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        #box {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+
+    <script>
+        let box = document.getElementById("box");
+        let position = 0;
+
+        setInterval(() => {
+            position += 5;
+            box.style.left = position + "px";
+            if(position > 105) clearInterval(interval);
+        }, 100);
+    </script>
+</body>
+</html>
